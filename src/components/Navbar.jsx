@@ -66,6 +66,21 @@ export default function Navbar(props) {
             props.setNav(false);
           }}
           className="link"
+          to="/services"
+        >
+          <img
+            style={{
+              width: "25px",
+            }}
+            src="services.png"
+            alt=""
+          />
+        </Link>
+        <Link
+          onClick={() => {
+            props.setNav(false);
+          }}
+          className="link"
           to="/contact"
         >
           <img

@@ -52,7 +52,7 @@ export default function About() {
             width: 90%;
             border-radius: 100px;
             height: 100%;
-            background-color: #4d4d4d;
+            background-color: var(--partBlue);
           }
           .para-heading {
             // letter-spacing: 7px;
@@ -100,7 +100,7 @@ export default function About() {
           }}
           className="heading-home"
         >
-          ABOUT
+          AB<span className="blueMake">O</span>UT
         </motion.h1>
         <motion.p
           initial={{
@@ -154,43 +154,80 @@ export default function About() {
         {/* <div> */}
         <p className="skill-bar">HTML</p>
         <div className="main-progress">
-          <div className="child-progress"></div>
+          <motion.div
+            initial={{
+              width: "0px",
+            }}
+            animate={{
+              width: "90%",
+              transition: { delay: 0.3 },
+            }}
+            className="child-progress"
+          ></motion.div>
         </div>
         <p className="skill-bar">CSS</p>
         <div className="main-progress">
-          <div
+          <motion.div
+            initial={{
+              width: "0px",
+            }}
+            animate={{
+              width: "90%",
+              transition: { delay: 0.35 },
+            }}
             className="child-progress"
             style={{
               width: "90%",
             }}
-          ></div>
+          ></motion.div>
         </div>
         <p className="skill-bar">Javascript</p>
         <div className="main-progress">
-          <div
+          <motion.div
+            initial={{
+              width: "0px",
+            }}
+            animate={{
+              width: "85%",
+              transition: { delay: 0.4 },
+            }}
             className="child-progress"
             style={{
               width: "85%",
             }}
-          ></div>
+          ></motion.div>
         </div>
         <p className="skill-bar">React.js</p>
         <div className="main-progress">
-          <div
+          <motion.div
+            initial={{
+              width: "0px",
+            }}
+            animate={{
+              width: "80%",
+              transition: { delay: 0.45 },
+            }}
             className="child-progress"
             style={{
               width: "80%",
             }}
-          ></div>
+          ></motion.div>
         </div>
         <p className="skill-bar">Next.js</p>
         <div className="main-progress">
-          <div
+          <motion.div
+            initial={{
+              width: "0px",
+            }}
+            animate={{
+              width: "70%",
+              transition: { delay: 0.5 },
+            }}
             className="child-progress"
             style={{
               width: "70%",
             }}
-          ></div>
+          ></motion.div>
         </div>
       </motion.div>
     </motion.div>

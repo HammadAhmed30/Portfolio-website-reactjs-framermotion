@@ -56,7 +56,7 @@ export default function Home() {
           }}
           className="heading-home"
         >
-          WEB
+          W<span className="blueMake">E</span>B
         </motion.h1>
         <motion.p
           initial={{
@@ -68,7 +68,7 @@ export default function Home() {
           }}
           className="para-heading"
         >
-          WEBSITE DEVELOPER
+          SITE DEVELOPER
         </motion.p>
         <Link to="/contact">
           <motion.button

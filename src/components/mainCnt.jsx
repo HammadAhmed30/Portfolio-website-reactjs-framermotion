@@ -6,6 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import About from "./About";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Contact from "./Contact";
+import Services from "./Services";
 export default function MainCnt() {
   const [isNav, setNav] = useState(false);
   const [isloading, setLoading] = useState(true);
@@ -214,6 +215,7 @@ export default function MainCnt() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/services" element={<Services />} />
           </Routes>
         </AnimatePresence>
       </div>

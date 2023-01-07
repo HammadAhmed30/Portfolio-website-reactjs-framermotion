@@ -33,12 +33,12 @@ export default function Contact() {
             outline: none;
             color: white;
             background-color: #2e2e2e;
-            border-left: 5px solid white;
+            border-left: 5px solid var(--partBlue);
             margin-top: 5px;
           }
           textarea {
             border: none;
-            border-left: 5px solid white;
+            border-left: 5px solid var(--partBlue);
             color: white;
             outline: none;
             width: calc(100% - 25px);
@@ -101,7 +101,7 @@ export default function Contact() {
           }}
           className="heading-home"
         >
-          CONTACT
+          CON<span className="blueMake">T</span>ACT
         </motion.h1>
         <motion.div
           initial={{
